@@ -1,0 +1,26 @@
+def flatten(lst):
+    result = []
+    for item in lst:
+        if isinstance(item, list):
+            result.extend(flatten(item))
+        else:
+            result.append(item)
+    return result
+
+# Örnek Kullanım
+input_lst = [[1,'a',['cat'],2],[[[3]],'dog'],4,5]
+output_lst = flatten(input_lst)
+print(output_lst)
+# Output: [1, 'a', 'cat', 2, 3, 'dog', 4, 5]
+
+def reverse(lst):
+    lst.reverse()
+    for item in lst:
+        if isinstance(item, list):
+            reverse(item)
+
+# Örnek Kullanım
+input_lst = [[1, 2], [3, 4], [5, 6, 7]]
+reverse(input_lst)
+print(input_lst)
+# Output: [[[7, 6, 5], [4, 3], [2, 1]]]
