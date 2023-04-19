@@ -1,0 +1,9 @@
+Merge Sort algoritması aşağıdaki aşamaları içerir:
+
+Diziyi ortadan ikiye böleriz: [16, 21, 11] | [8, 12, 22]
+Her iki yarıyı ayrı ayrı Merge Sort algoritmasına uygularız:
+Sol yarıyı sıralarız: [11, 16, 21]
+Sağ yarıyı sıralarız: [8, 12, 22]
+Sıralanmış iki yarıyı birleştiririz:
+[11, 16, 21] ve [8, 12, 22] dizilerini birleştirerek [8, 11, 12, 16, 21, 22] dizisini elde ederiz.
+Merge Sort'un Big-O gösterimi O(n log n)'dir.
